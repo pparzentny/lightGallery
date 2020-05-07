@@ -1131,7 +1131,7 @@
 
             _this.$slide.on('touchstart.lg', function(e) {
                 if (!_this.$outer.hasClass('lg-zoomed') && !_this.lgBusy) {
-                    e.preventDefault();
+                    // e.preventDefault();
                     _this.manageSwipeClass();
                     startCoords = e.originalEvent.targetTouches[0].pageX;
                 }
@@ -1139,7 +1139,7 @@
 
             _this.$slide.on('touchmove.lg', function(e) {
                 if (!_this.$outer.hasClass('lg-zoomed')) {
-                    e.preventDefault();
+                    // e.preventDefault();
                     endCoords = e.originalEvent.targetTouches[0].pageX;
                     _this.touchMove(startCoords, endCoords);
                     isMoved = true;
